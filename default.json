@@ -1,0 +1,64 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    "schedule:weekly",
+    "group:allNonMajor"
+  ],
+  "dependencyDashboard": true,
+  "labels": [
+    "dependencies"
+  ],
+  "rangeStrategy": "bump",
+  "packageRules": [
+    {
+      "matchDepTypes": [
+        "peerDependencies"
+      ],
+      "enabled": false
+    },
+    {
+      "groupName": "Linting",
+      "matchPackageNames": [
+        "/^eslint$/",
+        "/^prettier$/",
+        "/^@adufr/eslint-config$/",
+        "/^@nuxt/eslint$/",
+        "/^@adonisjs/eslint-config$/"
+      ]
+    },
+    {
+      "groupName": "Testing",
+      "matchPackageNames": [
+        "/^vitest$/",
+        "/^@nuxt/test-utils$/"
+      ]
+    },
+    {
+      "groupName": "Iconify",
+      "matchPackageNames": [
+        "/^@iconify-json$/"
+      ]
+    },
+    {
+      "groupName": "Tuyau",
+      "matchPackageNames": [
+        "/^@tuyau//"
+      ]
+    },
+    {
+      "groupName": "Pinia",
+      "matchPackageNames": [
+        "/pinia/",
+        "/^@pinia//"
+      ]
+    }
+  ],
+  "github-actions": {
+    "enabled": true,
+    "pinDigests": true
+  },
+  "postUpdateOptions": [
+    "pnpmDedupe"
+  ]
+}

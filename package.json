@@ -1,0 +1,16 @@
+{
+  "name": "@adufr/renovate-config",
+  "author": "Arthur Dufour <hello@arthurdufour.dev>",
+  "private": true,
+  "license": "MIT",
+  "packageManager": "pnpm@9.9.0",
+  "scripts": {
+    "test": "renovate-config-validator ./default.json"
+  },
+  "files": [
+    "default.json"
+  ],
+  "dependencies": {
+    "renovate": "^39.181.0"
+  }
+}
