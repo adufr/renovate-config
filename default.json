@@ -52,6 +52,13 @@
         "/pinia/",
         "/^@pinia//"
       ]
+    },
+    {
+      "groupName": "FullCalendar",
+      "matchPackageNames": [
+        "/fullcalendar/",
+        "/^@fullcalendar//"
+      ]
     }
   ],
   "github-actions": {
