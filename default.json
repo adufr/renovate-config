@@ -10,6 +10,12 @@
     "dependencies"
   ],
   "rangeStrategy": "bump",
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": [
+      "before 8am on monday"
+    ]
+  },
   "packageRules": [
     {
       "description": "Automerge patch updates",
