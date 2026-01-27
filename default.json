@@ -12,6 +12,23 @@
   "rangeStrategy": "bump",
   "packageRules": [
     {
+      "description": "Automerge patch updates",
+      "matchUpdateTypes": [
+        "patch"
+      ],
+      "automerge": true,
+      "automergeType": "pr",
+      "platformAutomerge": true
+    },
+    {
+      "description": "Require manual merge for minor/major",
+      "matchUpdateTypes": [
+        "minor",
+        "major"
+      ],
+      "automerge": false
+    },
+    {
       "matchDepTypes": [
         "peerDependencies"
       ],
