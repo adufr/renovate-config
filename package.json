@@ -3,7 +3,7 @@
   "author": "Arthur Dufour <hello@arthurdufour.dev>",
   "private": true,
   "license": "MIT",
-  "packageManager": "pnpm@10.29.3",
+  "packageManager": "pnpm@10.34.5",
   "scripts": {
     "test": "renovate-config-validator ./default.json"
   },
@@ -11,6 +11,6 @@
     "default.json"
   ],
   "dependencies": {
-    "renovate": "^43.15.3"
+    "renovate": "^43.288.0"
   }
 }
